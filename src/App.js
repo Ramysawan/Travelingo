@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Navbar, NavbarBrand } from "reactstrap";
+import "bootstrap/dist/css/bootstrap.css";
+import CarouselComponent from "./components/carouselComponent";
+import FooterComponent from "./components/footerComponent";
+import MainComponent from "./components/main";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <Navbar class="color-navbar">
+        <div className="container">
+          <NavbarBrand href="/">Travelingo</NavbarBrand>
+          <NavbarBrand href="/">About us</NavbarBrand>
+          <NavbarBrand href="/">Contact us</NavbarBrand>
+        </div>
+      </Navbar>
+      <header>
+        <div>
+          <CarouselComponent />
+        </div>
       </header>
+      <div>
+        <MainComponent />
+      </div>
+      <div>
+        <FooterComponent />
+      </div>
     </div>
   );
 }
