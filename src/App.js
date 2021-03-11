@@ -8,7 +8,7 @@ import MainComponent from "./components/main";
 function App() {
   return (
     <div className="App">
-      <Navbar class="color-navbar">
+      <Navbar dark color="secondary">
         <div className="container">
           <NavbarBrand href="/">Travelingo</NavbarBrand>
           <NavbarBrand href="/">About us</NavbarBrand>

@@ -15,6 +15,9 @@
 .render{
   height: 100%;
 }
+.footer-color{
+  background-color: darkgray;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
